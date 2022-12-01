@@ -1,0 +1,159 @@
+
+main {
+    padding-bottom: 100px;
+    background-color: rgba(0, 0, 0, 1);
+}
+section {
+    margin-top: 80px !important;
+    color: #fff;
+}
+section a {
+    color: #fff;
+}
+header {
+    background-color: rgba(0, 0, 0, 1);
+}
+header .header_wrap .logo_wrap {
+    background: url(../img/logo_white_img.png) no-repeat 0 0 / 28.639vw 4.773vw;
+    display: block;
+    width: 28.639vw;
+    height: 4.773vw;
+    background-size: 28.639vw 4.773vw;
+}
+header .header_wrap .ham_btn.trigger .icon_bar {
+    position:absolute;
+    left:0; 
+    width:24px;
+    height:2px;
+    border-radius:1px;
+    background:#fff;
+    transition:0.6s
+}
+.gnb { 
+    position:fixed;
+    top:0;
+    right:-330px;
+    bottom:0;
+    width:300px;
+    background-color: rgba(51, 51, 51,0.9);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(255,255,255,0.7);
+}
+header .header_wrap .gnb .mainBtn i {
+    color: #fff;
+}
+header .header_wrap .gnb .navbar .gnb_wrap li a {
+    color: #fff;
+}
+
+.games_container {
+    background-color: #000;
+}
+.section.games .h2Tit {
+    font-size: 65px;
+    padding: 34px 0 0 34px;
+}
+.section.games .pTxt {
+    padding-left: 34px;
+    margin-bottom: 80px;
+}
+.line {
+    display: block;
+    width: 320px;
+    height: 1px;
+    background-color: #aaa;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+.games_article {
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    max-width: 390px;
+}
+.games_article:last-child {
+    margin-bottom: 0;
+}
+.games_article .img_area img {
+    display: block;
+    width: 100%;
+}
+.games_article .img_area .games_studio {
+    position: absolute;
+    left: 12px;
+    top: 18px;
+    color: #fff;
+    font-size: 14px;
+}
+.games_article .txt_area {
+    padding: 34px;
+}
+.games_article .txt_area .koTit {
+    font-size: 24px;
+    font-weight: bold;
+}
+.games_article .txt_area .enTit {
+    margin-top: 2px;
+    font-size: 15px;
+}
+.games_article .txt_area .genre {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    min-height: 320px;
+    /*        부모의 자식 요소가 3차원의 애니메이션 효과를 가질때, 300px의 거리에서 보는 원근감을 줌*/
+    perspective: 300px;
+    margin-bottom: 80px;
+    overflow: hidden;
+}
+.container .item {
+    width: 100%;
+    height: auto;
+    font-size: 35px;
+    /*카드의 뒷면을 안보이게 처리-카드가 뒤집히면 뒷면이 안보임*/
+    backface-visibility: hidden;
+    transition: 1s;
+}
+.container .item.front {
+    /* 앞면 카드가 부유하게 되어, 뒷면 카드가 아래에서 위로 올라감 -> 요소 두개가 겹치게 됨*/
+    position: absolute;
+    /* 명시적으로 기본값 설정, 없어도 됨*/
+    transform: rotateY(0deg);
+}
+.container.on .item.front {
+    transform: rotateY(180deg);
+}
+.container .item.back {
+    /*y축을 중심으로 -180도 회전*/
+    transform: rotateY(-180deg);
+}
+.container.on .item.back {
+    transform: rotateY(0deg);
+}
+.turn_btn {
+    position: absolute;
+    top: 235px;
+    right: 40px;
+    width: 10px;
+    height: 30px;
+    transform: rotate(-90deg);
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+.turn_btn img {
+    width: 10px;
+    height: 30px;
+}
+.turn_btn .reverse {
+    display: none;
+}
+
+

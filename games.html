@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KRAFTON - Games</title>
+
+    <link rel="shortcut icon" href="./img/favicon.ico">
+
+    <!-- 스타일 관련 CSS -->
+    <link rel="stylesheet" href="./css/reset.css"/>
+    <link rel="stylesheet" href="./css/common.css"/>
+    <link rel="stylesheet" href="./css/main.css"/>
+    <link rel="stylesheet" href="./css/games.css"/>
+    <link rel="stylesheet" href="./css/responsive.css"/>
+    <!-- // 스타일 관련 CSS -->
+
+    <!-- AOS CDN -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- // AOS CDN -->
+
+    <!-- 스와이퍼 CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- // 스와이퍼 CDN -->
+
+    <!-- 스크립트 CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/ffbbbf0514.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <!-- // 스크립트 CDN -->
+</head>
+<body>
+    <div class="all_container">
+        <header>
+            <div class="header_wrap">
+                <h1>
+                    <a class="logo_wrap" href="./index.html">
+                        <span class="logo_txt transparent">KRAFTON</span>
+                    </a>
+                </h1>
+                <button class="ham_btn trigger">
+                    <span class="icon_bar"></span>
+                    <span class="icon_bar"></span>
+                    <span class="icon_bar"></span>
+                </button>
+                <div class="gnb">
+                    <a class="mainBtn" href="./index.html">
+                        <i class="fa-solid fa-house"></i>
+                    </a>
+                    <div class="navbar">
+                        <ul class="gnb_wrap">
+                            <li>
+                                <a href="./about.html" >About</a>
+                            </li>
+                            <li>
+                                <a href="./studios.html" >Studios</a>
+                            </li>
+                            <li>
+                                <a href="./games.html" >Games</a>
+                            </li>
+                            <li>
+                                <a href="./news.html" >News</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="bottom_nav">
+                <ul class="b_navbar">
+                    <li>
+                        <a href="./index.html">
+                            <i class="fa-solid fa-house"></i>
+                            <p>MAIN</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./about.html">
+                            <i class="fa-solid fa-circle-info"></i>
+                            <p>ABOUT</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./studios.html">
+                            <i class="fa-solid fa-video"></i>
+                            <p>STUDIO</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./games.html" class="on">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <p>GAME</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./news.html">
+                            <i class="fa-solid fa-newspaper"></i>
+                            <p>NEWS</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <section id="games" class="section games">
+                <div class="games_container">
+                    <h2 class="h2Tit krafton_ft">GAMES</h2>
+                    <p class="pTxt">크래프톤 게임</p>
+                    <span class="line"></span>
+                    <div class="games_wrap">
+                        <div class="container">
+                            <article id="article1" class="games_article item front" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                                <div class="img_area">
+                                    <img src="./img/sub_game_img_1.png" alt="">
+                                    <p class="games_studio">펍지 스튜디오</p>
+                                </div>
+                                <div class="txt_area">
+                                    <p class="koTit">PUBG: 배틀그라운드</p>
+                                    <p class="enTit">PUBG: BATTLEGROUNDS</p>
+                                    <p class="genre">배틀로얄   l   PC   모바일   콘솔</p>
+                                </div>
+                            </article>
+                            <article class="item back">
+                                <div class="media_container">
+                                    <div class="video-container">
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/82Y1azoaUhI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </article>
+                            <button class="turn_btn">
+                                <img class="normal" src="./img/ico-scroll-arrow_w.png" alt="">
+                                <img class="reverse" src="./img/ico-scroll-arrow_w_reverse.png" alt="">
+                            </button>
+                        </div>
+                        <div class="container">
+                            <article id="article2" class="games_article item front" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                                <div class="img_area">
+                                    <img src="./img/sub_game_img_2.png" alt="">
+                                    <p class="games_studio">펍지 스튜디오</p>
+                                </div>
+                                <div class="txt_area">
+                                    <p class="koTit">뉴스테이트 모바일</p>
+                                    <p class="enTit">NEW STATE MOBILE</p>
+                                    <p class="genre">배틀로얄   l   모바일</p>
+                                </div>
+                            </article>
+                            <article class="item back">
+                                <div class="media_container">
+                                    <div class="video-container">
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/htld_r86pfI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </article>
+                            <button class="turn_btn">
+                                <img class="normal" src="./img/ico-scroll-arrow_w.png" alt="">
+                                <img class="reverse" src="./img/ico-scroll-arrow_w_reverse.png" alt="">
+                            </button>
+                        </div>
+                        <div class="container">
+                            <article id="article3" class="games_article item front" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                                <div class="img_area">
+                                    <img src="./img/sub_game_img_3.png" alt="">
+                                    <p class="games_studio">블루홀 스튜디오</p>
+                                </div>
+                                <div class="txt_area">
+                                    <p class="koTit">테라</p>
+                                    <p class="enTit">TERA</p>
+                                    <p class="genre">MMORPG   l   콘솔</p>
+                                </div>
+                            </article>
+                            <article class="item back">
+                                <div class="media_container">
+                                    <div class="video-container">
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/Lm756e7HpKE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </article>
+                            <button class="turn_btn">
+                                <img class="normal" src="./img/ico-scroll-arrow_w.png" alt="">
+                                <img class="reverse" src="./img/ico-scroll-arrow_w_reverse.png" alt="">
+                            </button>
+                        </div>
+                        <div class="container">
+                            <article id="article4" class="games_article item front" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                                <div class="img_area">
+                                    <img src="./img/sub_game_img_4.png" alt="">
+                                    <p class="games_studio">크래프톤</p>
+                                </div>
+                                <div class="txt_area">
+                                    <p class="koTit">썬더 티어원</p>
+                                    <p class="enTit">Thunder Tier One</p>
+                                    <p class="genre">탑다운 슈터   l   PC</p>
+                                </div>
+                            </article>
+                            <article class="item back">
+                                <div class="media_container">
+                                    <div class="video-container">
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/7sZnzgF-gHE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </article>
+                            <button class="turn_btn">
+                                <img class="normal" src="./img/ico-scroll-arrow_w.png" alt="">
+                                <img class="reverse" src="./img/ico-scroll-arrow_w_reverse.png" alt="">
+                            </button>
+                        </div>
+                        <div class="container">
+                            <article id="article5" class="games_article item front" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                                <div class="img_area">
+                                    <img src="./img/sub_game_img_5.png" alt="">
+                                    <p class="games_studio">라이징윙스</p>
+                                </div>
+                                <div class="txt_area">
+                                    <p class="koTit">캐슬 크래프트</p>
+                                    <p class="enTit">Castle Craft : World War</p>
+                                    <p class="genre">전략   l   모바일</p>
+                                </div>
+                            </article>
+                            <article class="item back">
+                                <div class="media_container">
+                                    <div class="video-container">
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/YYTw81Fx-P0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </article>
+                            <button class="turn_btn">
+                                <img class="normal" src="./img/ico-scroll-arrow_w.png" alt="">
+                                <img class="reverse" src="./img/ico-scroll-arrow_w_reverse.png" alt="">
+                            </button>
+                        </div>
+                        <div class="container">
+                            <article id="article6" class="games_article item front" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                                <div class="img_area">
+                                    <img src="./img/sub_game_img_6.png" alt="">
+                                    <p class="games_studio">언노운 월즈</p>
+                                </div>
+                                <div class="txt_area">
+                                    <p class="koTit">서브노티카: 빌로우 제로</p>
+                                    <p class="enTit">Subnautica: below Zero</p>
+                                    <p class="genre">액션, 어드벤쳐   l   PC   콘솔</p>
+                                </div>
+                            </article>
+                            <article class="item back">
+                                <div class="media_container">
+                                    <div class="video-container">
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/QpTCaZjZyIQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </article>
+                            <button class="turn_btn">
+                                <img class="normal" src="./img/ico-scroll-arrow_w.png" alt="">
+                                <img class="reverse" src="./img/ico-scroll-arrow_w_reverse.png" alt="">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="footer_container">
+                <div class="top_area">
+                    <ul>
+                        <li><a href="javascript:;">찾아오시는 길</a></li>
+                        <li><a href="javascript:;">개인정보처리방침</a></li>
+                        <li><a href="javascript:;">문의하기</a></li>
+                    </ul>
+                </div>
+                <div class="middle_area">
+                    <div class="top_wrap">
+                        <ul>
+                            <li>
+                                <a href="https://www.facebook.com/Krafton.official/">
+                                    <img src="./img/footer_sns_icon_1.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/KRAFTONofficial">
+                                    <img src="./img/footer_sns_icon_2.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://blog.krafton.com/">
+                                    <img src="./img/footer_sns_icon_3.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://post.naver.com/kraftongameunion">
+                                    <img src="./img/footer_sns_icon_4.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/krafton.today/">
+                                    <img src="./img/footer_sns_icon_5.png" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <p class="middle_txt">FAMILY SITE</p>
+                </div>
+                <div class="bottom_area">
+                    <p>2021 KRAFTON, Inc. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>  
+    </div>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>

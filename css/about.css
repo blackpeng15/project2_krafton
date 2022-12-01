@@ -1,0 +1,169 @@
+
+/*****************************
+**** SECTION 1 STORY 영역 ****
+******************************/
+.section1.story h2.story {
+    font-size: 34px;
+    margin-left: 34px;
+    margin-bottom: 34px;
+}
+.story_img {
+    display: block;
+    margin: 0 auto;
+    /* width: 100vw; */
+    height: 100%;
+    overflow: hidden;
+}
+.story_img img {
+    display: block;
+    height: auto;
+    max-width: none;
+    max-height: 300px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.vision_wrap {
+    padding: 34px;
+}
+.vision_wrap h2 {
+    font-size: 40px;
+    margin-bottom: 34px;
+}
+.vision_wrap .area {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.vision_wrap .area .left_txt {
+    font-size: 30px;
+}
+.vision_wrap .area .right_txt {
+    width: 60%;
+    font-size: 14px;
+}
+
+/*****************************
+**** SECTION 2 VALUE 영역 ****
+******************************/
+.section2.value {
+    margin-top: 0;
+}
+.value_wrap {
+    padding: 34px;
+}
+.value_wrap h2 {
+    font-size: 40px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #000;
+}
+.value_container .value_article {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #000;
+}
+.value_container .top_txt {
+    padding-top: 25px;
+    color: #999;
+    font-weight: bold;
+    font-size: 15px;
+}
+.value_container .middle_txt {
+    margin-top: 25px;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 30px;
+}
+.value_container .bottom_txt {
+    margin-top: 25px;
+    font-size: 20px;
+    margin-bottom: 70px;
+    font-weight: 400;
+}
+.jump_arrow2 {
+    position: absolute;
+    top: 200px;
+    left: 14px;
+    width: 10px;
+    height: 30px;
+    transform: rotate(-90deg);
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+.jump_arrow2 img {
+    width: 10px;
+    height: 30px;
+}
+.value_container .hidden_txt {
+    display: none;
+    font-size: 13px;
+    line-height: 20px;
+    margin-bottom: 35px;
+}
+
+/******************************
+**** SECTION 3 CIRCLE 영역 ****
+*******************************/
+.section3.circle {
+    overflow: hidden;
+    background-color: #f7f7f7;
+}
+.section3.circle h2 {
+    font-size: 40px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+.section3.circle img {
+    position: relative;
+    display: block;
+    height: auto;
+    max-width: none;
+    max-height: 240px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.circle_wrap {
+    padding: 34px;
+}
+.circle_box {
+    width:180px;
+    height:180px;
+    /* border:1px solid #CCC; */
+    position:absolute;
+    top:-280px; bottom:0; left:12px; right:0;
+    margin:auto;
+    border-radius:50%; 
+}
+.circle_move {
+    width:30px;
+    height:30px;
+    background:rgba(0, 255, 255, 0.907);
+    border-radius:50%;
+    position:absolute;
+    top:0; bottom:0; left:0;right:0;
+    overflow:hidden;
+    margin:auto;
+    animation: circle 4s linear infinite;
+}
+
+@keyframes circle{
+    0%{
+        transform:rotate(0deg)
+        translate(-90px)
+        rotate(0deg)
+        scale(1);
+    }
+    100%{
+        transform:rotate(360deg)
+        translate(-90px)
+        rotate(-360deg)
+    }
+}
+.txt_wrap {
+    padding: 25px;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 70px;
+}

@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KRAFTON - News</title>
+
+    <link rel="shortcut icon" href="./img/favicon.ico">
+
+    <!-- 스타일 관련 CSS -->
+    <link rel="stylesheet" href="./css/reset.css"/>
+    <link rel="stylesheet" href="./css/common.css"/>
+    <link rel="stylesheet" href="./css/main.css"/>
+    <link rel="stylesheet" href="./css/news.css"/>
+    <link rel="stylesheet" href="./css/responsive.css"/>
+    <!-- // 스타일 관련 CSS -->
+
+    <!-- AOS CDN -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- // AOS CDN -->
+
+    <!-- 스와이퍼 CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- // 스와이퍼 CDN -->
+
+    <!-- 스크립트 CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/ffbbbf0514.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <!-- // 스크립트 CDN -->
+</head>
+<body>
+    <div class="all_container">
+        <header>
+            <div class="header_wrap">
+                <h1>
+                    <a class="logo_wrap" href="./index.html">
+                        <span class="logo_txt transparent">KRAFTON</span>
+                    </a>
+                </h1>
+                <button class="ham_btn trigger">
+                    <span class="icon_bar"></span>
+                    <span class="icon_bar"></span>
+                    <span class="icon_bar"></span>
+                </button>
+                <div class="gnb">
+                    <a class="mainBtn" href="./index.html">
+                        <i class="fa-solid fa-house"></i>
+                    </a>
+                    <div class="navbar">
+                        <ul class="gnb_wrap">
+                            <li>
+                                <a href="./about.html" >About</a>
+                            </li>
+                            <li>
+                                <a href="./studios.html" >Studios</a>
+                            </li>
+                            <li>
+                                <a href="./games.html" >Games</a>
+                            </li>
+                            <li>
+                                <a href="./news.html" >News</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="bottom_nav">
+                <ul class="b_navbar">
+                    <li>
+                        <a href="./index.html">
+                            <i class="fa-solid fa-house"></i>
+                            <p>MAIN</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./about.html">
+                            <i class="fa-solid fa-circle-info"></i>
+                            <p>ABOUT</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./studios.html">
+                            <i class="fa-solid fa-video"></i>
+                            <p>STUDIO</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./games.html">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <p>GAME</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./news.html" class="on">
+                            <i class="fa-solid fa-newspaper"></i>
+                            <p>NEWS</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <section id="news" class="section news">
+                <div class="news_container">
+                    <h2>보도자료</h2>
+                    <div class="select_wrap">
+                        <form action="" name="form">
+                            <select id="selectBox" name="selectBox" class="select">
+                                <option value = "all" selected="selected">All category</option>
+                                <option value = "option1">게임</option>
+                                <option value = "option2">이스포츠</option>
+                                <option value = "option3">etc</option>
+                            </select>
+                        </form>
+                    </div>
+                    <div class="search_wrap">
+                        <form action="" name="form">
+                            <input onkeyup="filter()" class="search" type="text" id="value" placeholder="Search">
+                            <button>
+                                <img src="./img/search_icon.png" alt="">
+                            </button>
+                        </form>
+                    </div>
+                    <article class="article article_etc">
+                        <img src="./img/sub_news_img_1.jpg" alt="">
+                        <div class="news_wrap">
+                            <p class="news_category etc">etc</p>
+                            <p class="news_title">
+                                크래프톤, ‘눈물을 마시는 새’ 아트북
+                                주간 베스트셀러 1위 등극
+                            </p>
+                            <p class="news_date">2022. 11. 27</p>
+                            <p class="news_summary">
+                                &nbsp;알라딘 종합 1위, 교보문고 예술/대중문화 1위, 예스
+                                24 예술 1위 원작 속 세계관과 캐릭터들을 300여 점
+                                의 일러스트로 구현...
+                            </p>
+                        </div>
+                        <button class="pop_arrow">
+                            <img src="./img/ico-scroll-arrow.png" alt="">
+                        </button>
+                        <div class="pop_back">
+                            <div class="pop_up">
+                                <button class="btn_close"></button>
+                                <p class="news_title">
+                                    크래프톤, ‘눈물을 마시는 새’ 아트북
+                                    주간 베스트셀러 1위 등극
+                                </p>
+                                <p class="news_date">Date : 2022. 11. 27</p>
+                                <img src="./img/sub_news_img_1.jpg" alt="">
+                                <p class="news_main">
+                                    ㈜크래프톤(대표 김창한)이 이영도 작가의 판타지 소설 
+                                    ‘눈물을 마시는 새’의 연재 20주년을 기념해 마련한 아트북 
+                                    ‘한계선을 넘다’가 11일 예약 판매를 시작했다.
+                                </p>
+                                <p class="news_main">
+                                    아트북 ‘한계선을 넘다’는 지금까지 소설의 텍스트로만 
+                                    만나볼 수 있었던 원작 속 세계관과 캐릭터들을 시각화된 
+                                    이미지로 온전히 구현해냈다. 아트북에는 인물, 종족, 배경, 
+                                    복장 등을 그려낸 300여 점의 일러스트를 비롯해 작품 줄거리와 
+                                    상세한 해석이 담겨있다.
+                                </p>
+                                <p class="news_main">
+                                    아트북 ‘한계선을 넘다’는 11일부터 17일까지 예스24, 알라딘, 
+                                    교보문고 등 주요 온라인 서점에서 예약 판매를 진행하며, 
+                                    예약 특전으로 초판 한정 빅엽서 8종을 제공한다. 
+                                    또한 출판사인 황금가지의 온라인 소설 플랫폼 ‘브릿G’에서도 
+                                    아트북을 예약 판매할 예정이며, 렌티큘러 A4 포스터를 
+                                    특전으로 증정한다. 오프라인 서점에서는 18일부터 
+                                    아트북을 만나볼 수 있다.
+                                </p>
+                                <p class="news_main">
+                                    크래프톤은 ‘눈물을 마시는 새’를 글로벌 IP로 성장시키기 위해 
+                                    원작에 충실하면서도 독창성이 가미된 IP 확장 작업을 진행하면서, 
+                                    동시에 글로벌 이용자들에게 다양한 형태의 콘텐츠를 제공한다는 목표다. 
+                                    내년에는 ‘눈물을 마시는 새’를 더 많은 글로벌 독자들에게 알리기 위해 
+                                    그래픽 노블을 선보일 계획이다.
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="article article_game">
+                        <img src="./img/sub_news_img_2.jpg" alt="">
+                        <div class="news_wrap">
+                            <p class="news_category game">게임</p>
+                            <p class="news_title">
+                                라이징윙스, 지스타 2022에서
+                                ‘디펜스더비’ 주요 정보 공개
+                            </p>
+                            <p class="news_date">2022. 11. 22</p>
+                            <p class="news_summary">
+                                &nbsp;신개념 타워 디펜스 게임, 9월 사전 테스트에 이어
+                                지스타서 호평 내년 상반기 글로벌 사전 예약 및 정식
+                                출시 목표...
+                            </p>
+                        </div>
+                        <button class="pop_arrow">
+                            <img src="./img/ico-scroll-arrow.png" alt="">
+                        </button>
+                        <div class="pop_back">
+                            <div class="pop_up">
+                                <button class="btn_close"></button>
+                                <p class="news_title">
+                                    라이징윙스, 지스타 2022에서
+                                    ‘디펜스더비’ 주요 정보 공개
+                                </p>
+                                <p class="news_date">Date : 2022. 11. 22</p>
+                                <img src="./img/sub_news_img_2.jpg" alt="">
+                                <p class="news_main">
+                                    크래프톤의 독립스튜디오 라이징윙스㈜(대표이사 김정훈, 
+                                    이하 라이징윙스)가 실시간 전략 디펜스 게임 
+                                    ‘디펜스 더비(Defense Derby: Rule the Kingdom, 이하 디펜스 더비)’
+                                    의 글로벌 얼리 테스트(Early Test)를 성황리에 마무리했다고 밝혔다.
+                                </p>
+                                <p class="news_main">
+                                    ‘디펜스 더비’의 글로벌 얼리 테스트는 제작 초기부터 이용자들의 피드백을 
+                                    반영해 점진적으로 게임을 완성해 나가는 라이징윙스의 새로운 
+                                    게임 제작 방식에 따른 것이다. ‘디펜스 더비’는 별도의 홍보와 마케팅 
+                                    활동이 없었음에도 글로벌 이용자들의 관심과 호평 속에 테스트를 성공적으로 
+                                    마무리하며, 정식 서비스에 대한 기대를 높였다.
+                                </p>
+                                <p class="news_main">
+                                    라이징윙스 강문철 부사장은 “기대 이상으로 많은 이용자들이 자발적으로 
+                                    디펜스 더비를 홍보하고 테스트에 참여해줬다. iOS 버전 출시, 정식 출시 
+                                    시기 등 게임에 대한 문의도 많이 들어왔다”며, “뜨거운 성원에 감사드리며, 
+                                    이용자분들의 기대를 뛰어 넘는 정식 출시 버전을 준비하여 보답하겠다”고 
+                                    밝혔다.
+                                </p>
+                                <p class="news_main">
+                                    정식 서비스에는 더 다양한 ‘룰러’와 ‘디펜더’가 추가되며, 새로운 게임 모드와 
+                                    특징이 소개될 예정이다. ‘디펜스 더비’는 내년 상반기 글로벌 출시를 목표로 
+                                    개발 중에 있다.
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="article article_esports">
+                        <img src="./img/sub_news_img_3.jpg" alt="">
+                        <div class="news_wrap">
+                            <p class="news_category esports">이스포츠</p>
+                            <p class="news_title">
+                                배틀그라운드 최상위 국제 이스포츠 대회
+                                PGC 2022, 유럽 나투스 빈체레 우승
+                            </p>
+                            <p class="news_date">2022. 11. 21</p>
+                            <p class="news_summary">
+                                &nbsp;  나투스 빈체레 총 179 포인트로 우승 상금 100만
+                                8천 달러 획득 김창한 크래프톤 대표, PGS 개막 등
+                                내년 이스포츠 운영 계획 발표...
+                            </p>
+                        </div>
+                        <button class="pop_arrow">
+                            <img src="./img/ico-scroll-arrow.png" alt="">
+                        </button>
+                        <div class="pop_back">
+                            <div class="pop_up">
+                                <button class="btn_close"></button>
+                                <p class="news_title">
+                                    배틀그라운드 최상위 국제 이스포츠 대회
+                                    PGC 2022, 유럽 나투스 빈체레 우승
+                                </p>
+                                <p class="news_date">Date : 2022. 11. 21</p>
+                                <img src="./img/sub_news_img_3.jpg" alt="">
+                                <p class="news_main">
+                                    ㈜크래프톤(대표 김창한)은 PUBG: 배틀그라운드(이하 배틀그라운드)의 
+                                    최상위 국제 이스포츠 대회인 ‘펍지 글로벌 챔피언십 2022(PUBG Global Championship 2022, 이하 PGC 2022)’에서 
+                                    유럽의 나투스 빈체레(Natus Vincere)가 우승했다고 21일 밝혔다.
+                                </p>
+                                <p class="news_main">
+                                    PGC 2022 그랜드 파이널은 지난 17일부터 20일까지 아랍에미리트 두바이에 위치한 
+                                    두바이 국제 전시장에서 유관중 경기로 진행했다. 
+                                    나흘간 총 20매치에 걸친 치열한 사투 끝에 유럽의 나투스 빈체레가 
+                                    총 179포인트로 2022년 배틀그라운드 이스포츠 전 세계 챔피언 자리에 올랐다.
+                                </p>
+                                <p class="news_main">
+                                    2위는 중국의 17게이밍(17GAMING)이 차지했다. 
+                                    그랜드 파이널 1일차와 2일차에 1위를 차지했던 17게이밍은 
+                                    뒷심 부족으로 3일차에 2위로 밀려난 이후, 
+                                    마지막 4일차까지 1위 탈환을 노렸지만 아쉽게도 168포인트에 그쳤다. 
+                                    3위는 유럽의 트위스티드 마인즈(Twisted Minds)가 자리했고, 
+                                    4위에는 아메리카의 이유나이티드(eUnited)가 이름을 올렸다.
+                                </p>
+                                <p class="news_main">
+                                    김창한 대표는 “배틀그라운드 이스포츠가 궁극적으로 문화 아이콘이자 
+                                    하나의 브랜드가 될 수 있도록 노력할 것”이라며 
+                                    “배틀그라운드 이스포츠만의 브랜드 아이덴티티를 확립하고 
+                                    다양한 컬래버레이션을 진행해 팬 여러분들이 더 자부심을 느낄 수 있는 
+                                    이스포츠가 될 수 있도록 하겠다”고 말했다.
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="footer_container">
+                <div class="top_area">
+                    <ul>
+                        <li><a href="javascript:;">찾아오시는 길</a></li>
+                        <li><a href="javascript:;">개인정보처리방침</a></li>
+                        <li><a href="javascript:;">문의하기</a></li>
+                    </ul>
+                </div>
+                <div class="middle_area">
+                    <div class="top_wrap">
+                        <ul>
+                            <li>
+                                <a href="https://www.facebook.com/Krafton.official/">
+                                    <img src="./img/footer_sns_icon_1.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/KRAFTONofficial">
+                                    <img src="./img/footer_sns_icon_2.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://blog.krafton.com/">
+                                    <img src="./img/footer_sns_icon_3.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://post.naver.com/kraftongameunion">
+                                    <img src="./img/footer_sns_icon_4.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/krafton.today/">
+                                    <img src="./img/footer_sns_icon_5.png" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <p class="middle_txt">FAMILY SITE</p>
+                </div>
+                <div class="bottom_area">
+                    <p>2021 KRAFTON, Inc. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>  
+    </div>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>

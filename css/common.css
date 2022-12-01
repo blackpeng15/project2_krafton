@@ -1,0 +1,53 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap');
+
+@font-face {
+    font-family: 'krafton';
+    font-style: 'normal'; /* font 스타일 정의 (기울임, 일반) */
+    font-weight: 400; /* font 굵기 정의 */
+    src: url('../font/KRAFTON_FONTWindow.ttf');
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.all_container {
+    max-width: 640px;
+    min-width: 270px;
+    /* height: 2000px; */
+    margin: 0 auto;
+}
+
+/* 폰트 적용 */
+.krafton_ft {
+    font-family: 'krafton';
+}
+
+.transparent {
+    opacity: 0;
+}
+.title {
+    display: block;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 40px;
+}
+.jump_arrow {
+    position: absolute;
+    top: 25px;
+    right: 35px;
+    width: 10px;
+    height: 30px;
+    transform: rotate(-90deg);
+    cursor: pointer;
+}
+.jump_arrow img {
+    width: 10px;
+    height: 30px;
+}
+
+.section {
+    margin-top: 100px;
+    position: relative;
+}

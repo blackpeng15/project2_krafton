@@ -1,0 +1,475 @@
+
+/********************
+**** HEADER 영역 ****
+*********************/
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    max-width: 640px;
+    min-width: 270px;
+    margin: 0 auto;
+    z-index: 10;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+header .header_wrap {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 0 25px;
+}
+header .header_wrap .logo_wrap {
+    background: url(../img/logo_black_img.png) no-repeat 0 0 / 28.639vw 4.773vw;
+    display: block;
+    width: 28.639vw;
+    height: 4.773vw;
+    background-size: 28.639vw 4.773vw;
+}
+header .header_wrap .logo_wrap .logo_txt {
+    display: block;
+    width: 28.639vw;
+    height: 4.773vw;
+}
+header .header_wrap .ham_btn.trigger { 
+    position: relative;
+    display: block !important;
+    width: 24px;
+    height: 24px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+}
+header .header_wrap .ham_btn.trigger .icon_bar {
+    position:absolute;
+    left:0; 
+    width:24px;
+    height:2px;
+    border-radius:1px;
+    background:#000000;
+    transition:0.6s
+}
+header .header_wrap .ham_btn.trigger .icon_bar:nth-child(1){ top:4px; }
+header .header_wrap .ham_btn.trigger .icon_bar:nth-child(2){ top:calc(50% - 1px);}
+header .header_wrap .ham_btn.trigger .icon_bar:nth-child(3){ bottom:4px; }
+
+
+header .header_wrap .ham_btn.trigger.open {}
+header .header_wrap .ham_btn.trigger.open .icon_bar:nth-child(1){ transform:rotate(45deg); margin-top:7px; }
+header .header_wrap .ham_btn.trigger.open .icon_bar:nth-child(2){ width:0; }
+header .header_wrap .ham_btn.trigger.open .icon_bar:nth-child(3){ transform:rotate(-45deg); margin-bottom:7px;}
+
+/****************************
+**** HEADER_TOP_NAV 영역 ****
+*****************************/
+.gnb { 
+    position:fixed;
+    top:0;
+    right:-330px;
+    bottom:0;
+    width:300px;
+    background-color: rgba(255,255,255,0.7);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(51, 51, 51,0.5);
+}
+.gnb .mainBtn i {
+    margin-top: 27px;
+    margin-left: 26px;
+    font-size: 24px;
+}
+.navbar { 
+    padding-top: 100px;
+    padding-bottom:100px; 
+}
+ul.gnb_wrap { 
+    margin-left:0; 
+    text-align:left;
+    flex-direction: column;
+}
+.gnb_wrap > li {
+    display:block;
+    position: relative;
+    width: 100%;
+    padding: 10px 0 10px 50px;
+}
+.gnb_wrap > li a {
+    display: block;
+    color:#000;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+/*******************************
+***** MAIN_BOTTOM_NAV 영역 *****
+********************************/
+.bottom_nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-width: 640px;
+    min-width: 270px;
+    margin: 0 auto;
+    z-index: 10;
+    background-color: #000;
+}
+.bottom_nav .b_navbar {
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+}
+.bottom_nav .b_navbar li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+}
+.bottom_nav .b_navbar li a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+.bottom_nav .b_navbar li a i {
+    color: #777;
+    font-size: 26px;
+}
+.bottom_nav .b_navbar li a p {
+    color: #777;
+    font-size: 12px;
+}
+.bottom_nav .b_navbar li a.on i {
+    color: #fff;
+}
+.bottom_nav .b_navbar li a.on p {
+    color: #fff;
+}
+
+/***************************************
+***** MAIN_SECTION1_MEDIANEWS 영역 *****
+****************************************/
+.section {
+    margin-top: 100px;
+    position: relative;
+}
+.section1.mediaNews {
+    
+}
+/* MAIN_SECTION1_MEDIANEWS - VIDEO 영역 */
+.video-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding-top: 56.25%;
+}
+.video-container:nth-child(2) {
+    margin-top: 50px;
+}
+iframe {
+    z-index: 1;
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+/*  MAIN_SECTION1_MEDIANEWS - SLIDER 영역 */
+.news.title {
+    margin-top: 100px;
+}
+.news_container.swiper.mySwiper {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 40px;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    max-width: 184px;
+    height: 112px;
+}
+.swiper-slide .txt_box {
+    margin-top: 12px;
+    text-align: left;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 0 5px;
+}
+.swiper-slide .txt_box .news_title {
+    font-family: 'krafton';
+    height: 50px;
+    letter-spacing: -0.8px;
+}
+.swiper-slide .txt_box .news_date {
+    font-size: 12px;
+    color: #777;
+}
+.swiper-pagination-bullet-active {
+    background-color: red !important;
+}
+
+/***************************************
+******* MAIN_SECTION2_ABOUT 영역 *******
+****************************************/
+section.section2 {
+    position: relative;
+}
+section.section2 h2 {
+    
+}
+section.section2 .about_container {
+    display: block;
+    background: url(../img/section2_about_img.jpg) no-repeat 0 0 / cover;
+    height: 662px;
+    padding: 80px 0 0 30px;
+    max-width: 390px;
+    max-height: 662px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+section.section2 .about_container .top_area  p {
+    color: #fff;
+    font-weight: bold;
+    margin-top: 30px;
+}
+section.section2 .about_container .top_area .top_txt {
+    font-size: 32px;
+}
+section.section2 .about_container .top_area .bottom_txt {
+    margin-top: 12px;
+    font-size: 16px;
+}
+section.section2 .about_container .top_area .bottom_txt span {
+    display: inline-block;
+    margin-top: 20px;
+}
+section.section2 .about_container .bottom_area {
+
+}
+section.section2 .about_container .bottom_area p {
+    color: #000;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 40px;
+    margin-top: 170px;
+}
+section.section2 .about_container .bottom_area .more_btn {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 35px;
+    box-shadow: 1px 1px 5px rgb(145, 145, 145);
+    border-radius: 20px;
+    background: #fff;
+    color: #000;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/***************************************
+******* MAIN_SECTION3_GAMES 영역 *******
+****************************************/
+section.section3 {
+    position: relative;
+    transition: all 2s;
+}
+.swiper-slide2 {
+    background-position: center;
+    background-size: cover;
+}
+.swiper-slide2 img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    max-width: 480px;
+    height: auto;
+    filter: brightness(0.8);
+}
+section.section3 .games_container {
+    max-width: 390px;
+    max-height: 215px;
+}
+.swiper-wrapper.wrapper2 {
+    padding-bottom: 40px;
+}
+section.section3 .games_studio {
+    position: absolute;
+    left: 10px;
+    top: 21px;
+    color: #fff;
+    font-size: 14px;
+}
+section.section3 .games_name {
+    position: absolute;
+    left: 10px;
+    bottom: 16px;
+    color: #fff;
+    font-size: 16px;
+}
+.swiper-cube .swiper-cube-shadow {
+    bottom: 45px !important;
+}
+/* 글씨 반짝이 효과 */
+.neon {
+    font-family: neon;
+    color: #fff;
+    line-height: 14px;
+}
+.flux {
+    color: #426DFB;
+    line-height: 16px;
+    text-shadow: 0 0 5px #2356FF;
+}
+
+.flux {
+    animation: flux 1s ease infinite;
+}
+@keyframes flux {
+    0%,
+    100% {
+        text-shadow: 0 0 1vw #1041FF, 0 0 3vw #1041FF, 0 0 10vw #1041FF, 0 0 10vw #1041FF, 0 0 .4vw #8BFDFE, .5vw .5vw .1vw #147280;
+        color: #28D7FE;
+}
+    50% {
+        text-shadow: 0 0 .5vw #082180, 0 0 1.5vw #082180, 0 0 5vw #082180, 0 0 5vw #082180, 0 0 .2vw #082180, .5vw .5vw .1vw #0A3940;
+        color: #146C80;
+    }
+}
+.mediaNews .jump_arrow {
+    top: unset;
+    bottom: 260px;
+}
+
+/***************************************
+******* MAIN_SECTION4_STUDIOS 영역 *******
+****************************************/
+section.section4 {
+    display: block;
+    margin-bottom: 100px;
+    overflow: hidden;
+}
+section.section4 .article_container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 20px;
+}
+section.section4 .article_container img {
+    display: block;
+    height: 42px;
+    width: auto;
+    margin-bottom: 18px;
+}
+section.section4 .article_container .area {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+section.section4 .article_container .area .wrap .studio_tit {
+    border-top: 1px solid #000;
+    padding-top: 15px;
+    font-weight: bold;
+    font-size: 20px;
+}
+section.section4 .article_container .area .wrap .studio_txt {
+    margin-top: 50px;
+    font-size: 13px;
+}
+section.section4 .article_container .area .wrap .studio_txt.long {
+    margin-top: 20px;
+}
+section.section4 .top_arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: right;
+    cursor: pointer;
+    margin-top: 50px;
+    margin-right: 15px;
+    width: 50px;
+    height: 50px;
+    background-color: #000;
+}
+section.section4 .top_arrow i {
+    color: #fff;
+    font-size: 30px;
+}
+
+footer {
+    display: block;
+    width: 100%;
+    height: 340px;
+    max-width: 640px;
+    min-width: 270px;
+    margin: 0 auto;
+    padding: 40px 20px 0 20px;
+    background-color: #000;
+    color: #fff;
+}
+footer a {
+    color: #fff;
+}
+footer .footer_container {
+    display: flex;
+    flex-direction: column;
+}
+footer .footer_container .top_area ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 20px;
+}
+footer .footer_container .top_area ul li a{
+    font-size: 12px;
+}
+footer .footer_container .middle_area {
+    margin-top: 28px;
+    border-top: 1px solid #777;
+    padding-top: 30px;
+}
+footer .footer_container .middle_area ul {
+    display: flex;
+    justify-content: center;
+    padding: 0 10px;
+    gap: 15px;
+}
+footer .footer_container .middle_area .top_wrap ul li a img {
+    height: 24px;
+}
+footer .footer_container .middle_area .middle_txt {
+    margin-top: 20px;
+    margin-left: 25px;
+    font-weight: bold;
+    font-size: 18px;
+    display: none;
+}
+footer .footer_container .bottom_area {
+    margin-top: 30px;
+    border-top: 1px solid #fff;
+    padding-top: 30px;
+    font-size: 13px;
+    color: #777 !important;
+    text-align: center;
+}
